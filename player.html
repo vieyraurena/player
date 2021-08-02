@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/css/styles.css">
+  <title>Player</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="musicPlayer">
+        <h2 class="musicPlayer_nameSong js-title"></h2>
+        <canvas width="1084px" height="400px" id="canvas"></canvas>
+        <button class="addPlaylist js-addPlayList">addPlaylist</button>
+        <div class="musicPlayer__control js__controllers">
+            <button class="addPlaylist before">before</button>
+            <button class="addPlaylist play">Play</button>
+            <button class="addPlaylist after">next</button>
+        </div>
+        <button class="addPlaylist favorite">addPlaylist</button>
+    </div>
+    <audio crossorigin="anonymous" src="" id="audio" type="audio/mp3"></audio>
+  </div>
+
+  <div class="background">
+    <div class="wrapper">
+      <div class="container__modal container__form">
+        <h2 class="title">Add to a list</h2>
+        <form class="form" action="">
+          <div class="form__logIn">
+            <label for="">New List</label>
+            <input type="text" placeholder="Enter new List">
+            <label for="">Existing List</label>
+            <div class="select">
+              <select name="slct" id="slct">
+                <option class="option" selected disabled>Choose a Playlist</option>
+                <option class="option" value="1">PlayList 1</option>
+                <option class="option" value="2">PlayList 2</option>
+                <option class="option" value="3">PlayList 3</option>
+              </select>
+            </div>
+            <div class="form__button">
+              <button class="form__button--btn mainBtn" type="submit">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/player.js" type="module"></script>
+</body>
+
+</html>
